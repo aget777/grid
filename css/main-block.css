@@ -1,0 +1,77 @@
+.main-block{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.main-block::before{
+    content: "";
+    display: block;
+    height: 768px;
+    width: 900px;
+    background: #FFEAA7;
+    border-radius: 99px;
+    transform: translate(197px, -276px) rotate(-45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.main-block::after{
+    content: "";
+    display: block;
+    background: url('../img/circles.svg') top right no-repeat;
+    background-size: contain;
+    height: 283px;
+    width: 550px;
+    position: absolute;
+    top: 19px;
+    right: 1px;
+}
+
+.main-block__title{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 115px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #2D3436;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.main-block__title::first-line{
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 104px;
+    letter-spacing: -3px;
+}
+
+
+.main-block__title b{
+    color: #d63031;
+    position: relative;
+}
+
+
+.main-block__title b::before{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: -9px;
+    width: 114%;
+    height: 44%;
+    background: #55EFC4;
+    border-radius: 999px;
+    z-index: -1;
+}
+
+.button_m{
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
