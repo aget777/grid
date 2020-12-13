@@ -1,4 +1,3 @@
-Первый проект на Figma
+Учим адаптивность!
 
-Ссылка на шаблон:
-https://www.figma.com/file/gJnbi2q84tMKYFBiQlswBS/Responsive-website?node-id=164%3A107372
+Макет: https://www.figma.com/file/gJnbi2q84tMKYFBiQlswBS/Responsive-website?node-id=164%3A107372

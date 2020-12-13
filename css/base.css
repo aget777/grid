@@ -1,31 +1,134 @@
+:root{
+    font-size: 10px;
+    --white: #ffffff;
+    --milk: #FCF8EA;
+    --black: #2D3436;
+    --gray: #5C5C5C;
+    --dark-black: #000000;
+    --purple: #6C5CE7;
+    --orange: #FDCB6E;
+    --yellow: #FFEAA7;
+    --red: #D63031;
+    --light-blue:#55EFC4;
+    --pink: #E84393;
+    --blue: #0984E3;
+    --green: #00B894;
+    --gray-soft: #F0F0F0;
+    --font-thin: 100;
+    --font-extra-light: 200;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+    --font-black: 900;
+}
+
 .body{
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
-
 .wrap{
-    width: 1170px;
+    width: 117em;
     margin: 0 auto;
 }
-
 .button{
     display: inline-block;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: -0.1px;
-    color: #fff;
-    padding: 15.7px 45.3px 13.2px 44px;
+    font-weight: var(--font-bold);
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.025rem;
+    color: var(--white);
+    padding: 1.46rem 4.45rem 1.34rem;
     text-decoration: none;
-    background: #6C5CE7;
-    border-radius: 999px;
+    background: var(--purple);
+    border-radius: 99.9rem;
+}
+.button_m{
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.05rem;
+    padding: 1.75rem 4.95rem 1.65rem;
+}
+.button_transparent{
+    background: transparent;
+    color: var(--purple);
+    border: 0.1rem solid #ADADAD;
+    border-radius: 1.6rem;
+}
+.button_s{
+    font-size: 1.8rem;
+    padding: 0.5rem 2.1rem;
 }
 
-.button_m{
-    font-size: 32px;
-    line-height: 48px;
-    letter-spacing: -0.5px;
-    padding: 17.5px 49.5px 16.5px;
+@media screen and (min-width: 2200px){
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 3000px){
+    :root{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    :root{
+        font-size: 8.3px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    :root{
+        font-size: 10px;
+    }
+    .wrap{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 690px){
+    .button_m{
+        font-size: 2.5rem;
+        padding: 1.2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .button_m{
+        font-size: 2rem;
+        padding: 0.5rem 3rem;
+    }
+    .button_s{
+        font-size: 1.35rem;
+        padding: 0.2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .button_m{
+        font-size: 1.6rem;
+        line-height: 1.4;
+        padding: 1.2rem 3rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .wrap{
+        width: 91.5%;
+    }
+    .button{
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    :root{
+        font-size: 8px;
+    }
 }

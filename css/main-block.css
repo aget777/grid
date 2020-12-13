@@ -2,76 +2,152 @@
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
+    padding-top: 8rem;
+    margin-bottom: 11rem;
 }
-
 .main-block::before{
     content: "";
     display: block;
-    height: 768px;
-    width: 900px;
-    background: #FFEAA7;
-    border-radius: 99px;
-    transform: translate(197px, -276px) rotate(-45deg);
+    height: 76.8rem;
+    width: 90rem;
+    background: var(--yellow);
+    border-radius: 9.9rem;
+    transform:  translate(19.7rem, -27.6rem) rotate(-45deg);
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
 }
-
 .main-block::after{
     content: "";
     display: block;
     background: url('../img/circles.svg') top right no-repeat;
     background-size: contain;
-    height: 283px;
-    width: 550px;
+    height: 29rem;
+    width: 20.9rem;
     position: absolute;
-    top: 19px;
-    right: 1px;
-}
-
-.main-block__title{
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 115px;
-    text-align: center;
-    letter-spacing: -1px;
-    color: #2D3436;
-    width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 45px;
-}
-
-.main-block__title::first-line{
-    font-weight: 800;
-    font-size: 96px;
-    line-height: 104px;
-    letter-spacing: -3px;
-}
-
-
-.main-block__title b{
-    color: #d63031;
-    position: relative;
-}
-
-
-.main-block__title b::before{
-    display: inline-block;
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: -9px;
-    width: 114%;
-    height: 44%;
-    background: #55EFC4;
-    border-radius: 999px;
+    top: 1.8rem;
+    right: 0;
     z-index: -1;
 }
-
-.button_m{
-    font-size: 32px;
-    line-height: 48px;
-    letter-spacing: -0.5px;
+.main-block__title{
+    font-weight: var(--font-black);
+    font-size: 6.4rem;
+    line-height: 11.5rem;
+    text-align: center;
+    letter-spacing: -.1rem;
+    color: var(--black);
+    width: 15.6em;
+    margin: 0 auto;
+    /* margin-bottom: 4.5rem; */
+    margin-bottom: 2.8rem;
 }
+.main-block__title::first-line{
+    font-weight: var(--font-extra-bold);
+    font-size: 1.5em;
+    line-height: 1.08em;
+    letter-spacing: -.03em;
+}
+.main-block__title b{
+    /* display: inline-block; */ /*слово fine уменьшалось слишком сильно*/
+    color: var(--red);
+    position: relative;
+}
+.main-block__title b::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -3%;
+    left: -5.5%;
+    width: 113.5%;
+    height: 44%;
+    background: var(--light-blue);
+    border-radius: 99.9rem;
+    z-index: -1;
+}
+.main-block_hide_hd{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+    .main-block{
+        padding-top: 12rem;
+        box-sizing: border-box;
+    }
+    .main-block__title{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 690px){
+    .main-block__title{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .main-block__title{
+        font-size: 2.5rem;
+        line-height: 5rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .main-block_hide_hd{
+        display: block;
+    }
+    .main-block_hide{
+        display: none;
+    }
+    .main-block{
+        background: url('../img/wave.png') top center no-repeat;
+        background-size: 100%;
+    }
+    .main-block__title{
+        font-size: 4.8rem;
+        width: 90%;
+        line-height: 1.64;
+        margin-bottom: 1.8rem;
+    }
+    .main-block__title::first-line{
+        font-size: 1.3333em;
+        line-height: 1.08em;
+        letter-spacing: -0.16rem;
+    }
+    .main-block__subtitle{
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.5;
+        letter-spacing: 0.025rem;
+        color: var(--black);
+        text-align: center;
+        width: 80%;
+        margin: 0 auto 2rem;
+    }
+    .main-block__arrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 6.4rem;
+        height: 6.4rem;
+        margin: 0 auto;
+        background: var(--milk);
+        border-radius: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .main-block::after {
+        height: 21rem;
+        width: 14.1rem;
+        top: 5.5rem;
+        right: -1.45rem;
+    }
+    .main-block::before{
+        height: 42.26rem;
+        width: 50rem;
+        border-radius: 5.448rem;
+        transform: translate(27.2rem, -8.3rem) rotate(-45deg);
+    }
+
+    .main-block__title b{
+        display: inline-block;   
+    }
+}
+
